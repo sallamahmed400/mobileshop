@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+<body >
+
+    <header>
+        <!-- header start  -->
+        <div id="navbar">
+            <div class="company">
+                <h2>Mobile Shop</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" style="color: #20c997;">Home</a></li>
+                   
+                </ul>
+            </nav>
+
+        </div>
+        <div class="content">
+            <h5 class="one text-white">WELCOME</h5>
+            <h1 class="text-white">Technology Coming </h1>
+            <p class="text-white">iStock's easy-to-search collection features </p>
+            <a href="#system" class="btn btn-primary"> Hire Me </a>
+        </div>
+        
+         <!-- header end  -->
+    </header>
+ 
+
+    <!-- form product -->
+<div class="first">
+    <div class="w-50 mx-auto py-5 child " id="system">
+        <h3 class="mb-5 text-info">Product system</h3>
+
+        <div class="form-group mb-3">
+            
+            <label for="ProductName " class="mb-3 fw-bolder fs-5">Product Name:</label> 
+            <input type="text" id="ProductName" onkeyup="validationProductName()"  class=" form-control  border border-info border-1">
+            <p class="text-danger d-none" id="nameError">invaild ProductName hint (Start with a Capital letter from 4 to 8 letters )</p>
+        </div>
+        <div class="form-group mb-3">
+            <label for="ProductPrice" class="mb-3 fw-bolder fs-5">ProductPrice:</label>
+            <input type="number" id="ProductPrice" onkeyup="validationProductPrice()" class=" form-control  border border-info border-1">
+            <p class="text-danger d-none" id="priceError">invaild ProductPrice</p>
+
+        </div>
+        <div class="form-group mb-3">
+            <label for="ProductCate" class="mb-3 fw-bolder fs-5">ProductCate:</label>
+            <input type="text" id="ProductCate" class=" form-control  border border-info border-1">
+        </div>
+        <div class="form-group mb-3">
+            <label for="ProductDesc" class="mb-3 fw-bolder fs-5">ProductDesc:</label>
+            <input type="text" id="ProductDesc" class=" form-control  border border-info border-1">
+        </div>
+        <button type="submit" id="mainBtn" onclick="addProduct()" class=" btn btn-outline-info border border-info border-2" >Add Product</button>
+
+    </div>
+</div>
+      <!-- Search  -->
+    <div class="w-50 mx-auto mb-5">
+      <label for="Search" class="text-info h4">Search</label>
+      <input type="search" oninput="searchProduct(this.value)" id="Search" class="form-control border border-info border-1 ">
+    </div>
+   <!-- table  -->
+<div class=" mx-auto">
+    <table class="table">
+        <thead>
+            <th class="text-white bg-info">index</th>
+            <th class="text-white bg-info">ProductName</th>
+            <th class="text-white bg-info">ProductPrice</th>
+            <th class="text-white bg-info">ProductCate</th>
+            <th class="text-white bg-info">ProductDesc</th>
+            <th class="text-white bg-info">Update</th>
+            <th class="text-white bg-info">Delete</th>
+
+        </thead>
+        <tbody id="Tbody">
+           
+        </tbody>
+    </table>
+</div>
+
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

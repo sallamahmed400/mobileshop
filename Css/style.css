@@ -1,0 +1,109 @@
+ 
+ .company h2 {
+    margin-right: 10px;
+    color: white;
+   
+ }
+   
+a {
+    text-decoration: none;
+}
+ul {
+  list-style: none;
+  
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#navbar {
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0,0,0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+#navbar ul {
+    display: flex;
+    margin-right: 100%;
+    background-image: ;
+}
+#navbar ul li a {
+    padding: 15px 20px;
+    color:#fefe;
+    font-weight: 600;
+}
+#navbar ul li a:hover{
+    border-bottom:2px solid #20c997 ;
+}
+h1::after {
+    content: "";
+    color: #20c997;
+    animation-name: ahmed;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes ahmed {
+    0%{content: "|";}
+    10%{content: "f";}
+    20%{content: "fu";}
+    30%{content: "fut";}
+    40%{content: "futu";}
+    50%{content: "futur";}
+    50%{content: "future";}
+    60%{content: "futu";}
+    70%{content: "fut";}
+    80%{content: "fu";}
+    90%{content: "f";}
+    100%{content: "";}
+    
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary {
+    color: #58dddd;
+    border: 1px solid green;
+    
+   
+}
+.btn-primary{
+     background:rgba(0, 0,0,0.2); 
+    
+}
+.btn-primary:hover{
+    background:rgb(11, 189, 11);
+}
+/* header start  */
+header {
+    height: 100vh;
+    background:url(../img/phone.jpg) center center/cover no-repeat;
+    
+    
+    
+}
+header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0,0,0.2);
+   
+   
+}
+
+
+/* header end  */
+.first {
+    background-color: #d1dcd9;
+    margin-top: 10px;
+}
+
